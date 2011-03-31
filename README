@@ -1,0 +1,20 @@
+#
+# Turntable
+# The hip-hop Ruby database
+#
+# Christian Koch <cfkoch@sdf.lonestar.org>
+#
+
+Turntable is a pure Ruby implementation of a relational database, similar in
+spirit to SQLite. Unlike Sequel or any other object-relational mapper, Turntable
+is built with Ruby from the ground up, and implements Rubyisms whenever
+possible. It never goes anywhere near SQL.
+
+Turntable databases include the Enumerable mixin, so all the methods available
+there are also available for you:
+
+  turntable.
+    select { |film| film[:title] =~ /\AG/ }.
+    sort_by { |film| film[:year] }.
+    reverse.
+    detect { |film| film[:director] == "Francis Ford Coppola" }

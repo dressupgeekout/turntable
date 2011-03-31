@@ -1,0 +1,17 @@
+In no particular order:
+
+* Make into a gem.
+
+* Somehow make every Row aware of its associated TableHeader without actually
+  shipping every Row with the TableHeader. 
+
+* Make Turntable marshallable. 
+
+* Figure out the best/most efficient way to serialize increasingly larger
+  tables.
+
+* Implement all of the SortedSet methods which are not present in Enumerable in
+  such a way that does not require calling Turntable::Table#rows. (#delete_if,
+  first, etc.)
+
+* Write simpler #inspect representations of all objects.

@@ -1,7 +1,5 @@
 In no particular order:
 
-* Make into a gem.
-
 * Somehow make every Row aware of its associated TableHeader without actually
   shipping every Row with the TableHeader. 
 

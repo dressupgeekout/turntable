@@ -15,3 +15,6 @@ In no particular order:
   first, etc.)
 
 * Write simpler #inspect representations of all objects.
+
+* Add the strict typing functionality, or figure out what to do with it at
+  least.

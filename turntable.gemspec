@@ -3,7 +3,9 @@ Gem::Specification.new do |s|
   s.version = '0.0.1'
   s.license = "2-clause BSD"
 
-  s.summary = "The hip-hop Ruby database."
+  s.homepage = 'http://christiank.github.com/turntable/'
+  s.summary  = "The hip-hop Ruby database."
+
   s.description = <<-EOF
 Turntable is a pure Ruby implementation of a relational database, similar in
 spirit to SQLite. Unlike Sequel or any other object-relational mapper, Turntable

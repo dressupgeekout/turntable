@@ -19,6 +19,10 @@ there are also available for you:
     reverse.
     detect { |film| film[:director] == "Francis Ford Coppola" }
 
+Oh yeah, installing it is a cinch, too.
+
+  $ gem install turntable
+
 #####
 
 Turntable is released under a simplified BSD-style license.

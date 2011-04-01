@@ -33,8 +33,8 @@ module Turntable
     # Returns a string representing the receiver and its contents.
     #
     def inspect
-      "#<%s @data=%s @position=%d>" % [
-        self.class, @data.inspect, @position
+      "#<%s @header=%s @data=%s @position=%d>" % [
+        self.class, @header.inspect, @data.inspect, @position
       ]
     end
 

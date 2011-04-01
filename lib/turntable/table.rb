@@ -22,6 +22,8 @@ module Turntable
 
     include Enumerable
 
+    # Iterate through all the rows contained inside this Table.
+    #
     def each
       @rows.each { |row| yield row }
     end

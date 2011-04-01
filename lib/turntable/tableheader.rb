@@ -18,6 +18,9 @@ module Turntable
 
     include Enumerable
 
+    # Iterate through all the ColumnDefinitions contained inside this
+    # TableHeader.
+    #
     def each
       @columns.each { |column| yield column }
     end

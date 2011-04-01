@@ -35,6 +35,14 @@ module Turntable
       end
     end
 
+    # Returns a string representing the receiver and its contents.
+    #
+    def inspect
+      "#<%s @columns=%s>" % [
+        self.class, @columns.inspect
+      ]
+    end
+
     # Returns a ColumnDefinition by specifying its position within the
     # TableHeader.
     #

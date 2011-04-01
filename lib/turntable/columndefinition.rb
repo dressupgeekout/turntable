@@ -34,6 +34,14 @@ module Turntable
       @position = position
       @type     = type
     end
+
+    # Returns a string representing the receiver and its contents.
+    #
+    def inspect
+      "#<%s @name=%s @position=%d @type=%s>" % [
+        self.class, @name.inspect, @position, @type.inspect
+      ]
+    end
   end
 
 end

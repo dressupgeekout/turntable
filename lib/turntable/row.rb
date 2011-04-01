@@ -30,6 +30,14 @@ module Turntable
       @data     = data_array
     end
 
+    # Returns a string representing the receiver and its contents.
+    #
+    def inspect
+      "#<%s @data=%s @position=%d>" % [
+        self.class, @data.inspect, @position
+      ]
+    end
+
     # Returns the data found at a specific column.
     # TODO @data should have this close by...
     #

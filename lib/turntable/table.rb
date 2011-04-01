@@ -36,6 +36,14 @@ module Turntable
       @header = header
     end
 
+    # Returns a string representing the receiver and its contents.
+    #
+    def inspect
+      "#<%s @rows=%s>" % [
+        self.class, @rows.inspect     
+      ]
+    end
+
     # Append a new Row to the Table.
     #
     #   t = Turntable::Table.new(some_header)
